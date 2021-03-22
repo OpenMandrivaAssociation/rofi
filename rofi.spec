@@ -5,7 +5,7 @@ Release:	1
 License:	MIT
 URL:		https://github.com/DaveDavenport/rofi
 Source0:	https://github.com/DaveDavenport/rofi/releases/download/%{version}/%{name}-%{version}.tar.xz
-
+BuildRequires:	meson
 BuildRequires:	bison
 BuildRequires:	doxygen
 BuildRequires:	flex
@@ -68,17 +68,12 @@ The %{name}-themes package contains themes for %{name}.
 %prep
 %autosetup -p1
 
-
 %build
-%configure
-%make_build
-
-make doxy
-find doc/html/html -name "*.map" -delete
-find doc/html/html -name "*.md5" -delete
+%meson
+%ninja_build
 
 %install
-%make_install
+%ninja_install -C build
 
 %files
 %doc README.md
