@@ -46,18 +46,11 @@ script.
 %package devel
 Summary:	Development files for %{name}
 Requires:	%{name} = %{EVRD}
+%rename %{name}-devel-doc
 
 %description devel
 The %{name}-devel package contains libraries and header files for
 developing applications that use %{name}.
-
-%package devel-doc
-Summary:	Documentation files for %{name}
-BuildArch:	noarch
-
-%description devel-doc
-The %{name}-devel-doc package contains documentation files for developing
-applications that use %{name}.
 
 %package themes
 Summary:	Themes for %{name}
@@ -92,7 +85,3 @@ The %{name}-themes package contains themes for %{name}.
 %files devel
 %{_includedir}/rofi
 %{_libdir}/pkgconfig/rofi.pc
-
-%files devel-doc
-%license COPYING
-%doc doc/html/html/*
