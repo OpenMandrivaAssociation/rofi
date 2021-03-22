@@ -6,10 +6,12 @@ License:	MIT
 URL:		https://github.com/DaveDavenport/rofi
 Source0:	https://github.com/DaveDavenport/rofi/releases/download/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:	meson
+BuildRequires:	ninja
 BuildRequires:	bison
 BuildRequires:	doxygen
 BuildRequires:	flex
 BuildRequires:	graphviz
+BuildRequires:	giflib-devel
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(cairo-xcb)
 BuildRequires:	pkgconfig(check) >= 0.11.0
