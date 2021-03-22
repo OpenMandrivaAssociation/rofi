@@ -6,7 +6,6 @@ License:	MIT
 URL:		https://github.com/DaveDavenport/rofi
 Source0:	https://github.com/DaveDavenport/rofi/releases/download/%{version}/%{name}-%{version}.tar.xz
 BuildRequires:	meson
-BuildRequires:	ninja
 BuildRequires:	bison
 BuildRequires:	doxygen
 BuildRequires:	flex
@@ -72,7 +71,7 @@ The %{name}-themes package contains themes for %{name}.
 
 %build
 %meson
-%ninja_build
+%ninja_build -C build
 
 %install
 %ninja_install -C build
