@@ -71,7 +71,7 @@ The %{name}-themes package contains themes for %{name}.
 
 %build
 %meson
-%ninja_build -C build
+%meson_build
 
 %install
 %ninja_install -C build
