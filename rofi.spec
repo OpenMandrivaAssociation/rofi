@@ -1,6 +1,6 @@
 Summary:	A window switcher, application launcher and dmenu replacement
 Name:		rofi
-Version:	1.6.1
+Version:	1.7.2
 Release:	1
 License:	MIT
 URL:		https://github.com/DaveDavenport/rofi
@@ -27,6 +27,7 @@ BuildRequires:	pkgconfig(xcb-randr)
 BuildRequires:	pkgconfig(xcb-xinerama)
 BuildRequires:	pkgconfig(xcb-xkb)
 BuildRequires:	pkgconfig(xcb-xrm)
+BuildRequires:	pkgconfig(xcb-cursor)
 BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(xkbcommon-x11)
 
