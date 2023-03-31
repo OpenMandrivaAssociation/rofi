@@ -1,7 +1,7 @@
 Summary:	A window switcher, application launcher and dmenu replacement
 Name:		rofi
 Version:	1.7.2
-Release:	1
+Release:	2
 License:	MIT
 URL:		https://github.com/DaveDavenport/rofi
 Source0:	https://github.com/DaveDavenport/rofi/releases/download/%{version}/%{name}-%{version}.tar.xz
