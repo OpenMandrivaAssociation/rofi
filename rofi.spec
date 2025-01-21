@@ -34,6 +34,7 @@ BuildRequires:	pkgconfig(xcb-cursor)
 BuildRequires:  pkgconfig(xcb-keysyms)
 BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(xkbcommon-x11)
+BuildRequires:	pkgconfig(xkeyboard-config)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-server)
 
@@ -82,6 +83,9 @@ The %{name}-themes package contains themes for %{name}.
 %{_bindir}/rofi
 %{_bindir}/rofi-sensible-terminal
 %{_bindir}/rofi-theme-selector
+%{_datadir}/applications/rofi-theme-selector.desktop
+%{_datadir}/applications/rofi.desktop
+%{_datadir}/icons/hicolor/scalable/apps/rofi.svg
 %{_mandir}/man1/rofi*
 %{_mandir}/man5/rofi*
 
