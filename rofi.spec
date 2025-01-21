@@ -11,12 +11,15 @@ BuildRequires:	doxygen
 BuildRequires:	flex
 BuildRequires:	graphviz
 BuildRequires:	giflib-devel
+BuildRequires:  pkgconfig(alsa)
 BuildRequires:	pkgconfig(cairo)
 BuildRequires:	pkgconfig(cairo-xcb)
 BuildRequires:	pkgconfig(check) >= 0.11.0
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(librsvg-2.0)
 BuildRequires:	pkgconfig(libstartup-notification-1.0)
+BuildRequires:  pkgconfig(libmpdclient)
+BuildRequires:  pkgconfig(libnl-3.0)
 BuildRequires:	pkgconfig(pango)
 BuildRequires:	pkgconfig(pangocairo)
 BuildRequires:	pkgconfig(xcb)
@@ -31,6 +34,8 @@ BuildRequires:	pkgconfig(xcb-cursor)
 BuildRequires:  pkgconfig(xcb-keysyms)
 BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(xkbcommon-x11)
+BuildRequires:  pkgconfig(wayland-client)
+BuildRequires:  pkgconfig(wayland-server)
 
 # https://github.com/sardemff7/libgwater
 Provides:	bundled(libgwater)
