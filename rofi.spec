@@ -28,6 +28,7 @@ BuildRequires:	pkgconfig(xcb-xinerama)
 BuildRequires:	pkgconfig(xcb-xkb)
 BuildRequires:	pkgconfig(xcb-xrm)
 BuildRequires:	pkgconfig(xcb-cursor)
+BuildRequires:  pkgconfig(xcb-keysyms)
 BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(xkbcommon-x11)
 
