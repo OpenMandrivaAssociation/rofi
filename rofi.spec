@@ -37,6 +37,7 @@ BuildRequires:	pkgconfig(xkbcommon-x11)
 BuildRequires:	pkgconfig(xkeyboard-config)
 BuildRequires:  pkgconfig(wayland-client)
 BuildRequires:  pkgconfig(wayland-server)
+BuildRequires:  pkgconfig(wayland-protocols)
 
 # https://github.com/sardemff7/libgwater
 Provides:	bundled(libgwater)
